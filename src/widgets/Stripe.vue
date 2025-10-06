@@ -92,7 +92,7 @@ onBeforeMount(async () => {
     stripeLoaded.value = true
 
     try {
-        const response = await axios.post(apiUrl, {
+        const response = await axios.post(props.apiUrl, {
             amount: props.amount * 100,
             currency: props.currency,
             metadata: props.metadata,

@@ -87,7 +87,7 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
   },
   emits: [w],
   setup(a, { emit: q }) {
-    const k = q, n = a, i = m({
+    const k = q, r = a, i = m({
       name: "",
       line1: "",
       line2: "",
@@ -104,34 +104,34 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
       postalCode: { required: v, minLength: h(4) },
       country: { required: v },
       vatId: {}
-    }, r = A(C, i);
+    }, n = A(C, i);
     V(() => {
-      r.value.$touch();
+      n.value.$touch();
     });
     const x = async () => {
-      if (await r.value.$validate(), !r.value.$error)
+      if (await n.value.$validate(), !n.value.$error)
         try {
           const p = {
             sender: {
-              name: n.senderName,
-              line1: n.senderLine1,
-              line2: n.senderLine2 || "",
-              postalCode: n.senderPostalCode,
-              city: n.senderCity,
-              state: n.senderState || "",
-              vatId: n.senderVatId || ""
+              name: r.senderName,
+              line1: r.senderLine1,
+              line2: r.senderLine2 || "",
+              postalCode: r.senderPostalCode,
+              city: r.senderCity,
+              state: r.senderState || "",
+              vatId: r.senderVatId || ""
             },
             receiver: i.value,
             invoice_items: [
               {
-                units: n.units,
-                unit_price: n.amount,
-                description: n.productDescription,
-                currency: n.currency,
+                units: r.units,
+                unit_price: r.amount,
+                description: r.productDescription,
+                currency: r.currency,
                 tax_rate: 19
               }
             ]
-          }, e = await D.post(n.apiUrl, p);
+          }, e = await D.post(r.apiUrl, p);
           console.log("Invoice created successfully:", e.data), k(w, e.data);
         } catch (p) {
           console.error("Error creating invoice:", p);
@@ -164,14 +164,14 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
               "onUpdate:modelValue": e[0] || (e[0] = (l) => i.value.name = l),
               class: b([
                 "w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2",
-                o(r).name.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                o(n).name.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
               ]),
               required: ""
             }, null, 2), [
               [f, i.value.name]
             ]),
-            o(r).name.$error ? (d(), s("div", Y, [
-              o(r).name.required.$invalid ? (d(), s("span", G, "Name ist erforderlich")) : o(r).name.minLength.$invalid ? (d(), s("span", H, "Name muss mindestens 2 Zeichen haben")) : u("", !0)
+            o(n).name.$error ? (d(), s("div", Y, [
+              o(n).name.required.$invalid ? (d(), s("span", G, "Name ist erforderlich")) : o(n).name.minLength.$invalid ? (d(), s("span", H, "Name muss mindestens 2 Zeichen haben")) : u("", !0)
             ])) : u("", !0)
           ]),
           t("div", null, [
@@ -199,14 +199,14 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
               "onUpdate:modelValue": e[2] || (e[2] = (l) => i.value.line1 = l),
               class: b([
                 "w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2",
-                o(r).line1.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                o(n).line1.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
               ]),
               required: ""
             }, null, 2), [
               [f, i.value.line1]
             ]),
-            o(r).line1.$error ? (d(), s("div", Q, [
-              o(r).line1.required.$invalid ? (d(), s("span", W, "Adresse ist erforderlich")) : o(r).line1.minLength.$invalid ? (d(), s("span", X, "Adresse muss mindestens 5 Zeichen haben")) : u("", !0)
+            o(n).line1.$error ? (d(), s("div", Q, [
+              o(n).line1.required.$invalid ? (d(), s("span", W, "Adresse ist erforderlich")) : o(n).line1.minLength.$invalid ? (d(), s("span", X, "Adresse muss mindestens 5 Zeichen haben")) : u("", !0)
             ])) : u("", !0)
           ]),
           t("div", null, [
@@ -235,14 +235,14 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
                 "onUpdate:modelValue": e[4] || (e[4] = (l) => i.value.city = l),
                 class: b([
                   "w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2",
-                  o(r).city.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  o(n).city.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, null, 2), [
                 [f, i.value.city]
               ]),
-              o(r).city.$error ? (d(), s("div", te, [
-                o(r).city.required.$invalid ? (d(), s("span", re, "Stadt ist erforderlich")) : o(r).city.minLength.$invalid ? (d(), s("span", ne, "Stadt muss mindestens 2 Zeichen haben")) : u("", !0)
+              o(n).city.$error ? (d(), s("div", te, [
+                o(n).city.required.$invalid ? (d(), s("span", re, "Stadt ist erforderlich")) : o(n).city.minLength.$invalid ? (d(), s("span", ne, "Stadt muss mindestens 2 Zeichen haben")) : u("", !0)
               ])) : u("", !0)
             ]),
             t("div", null, [
@@ -256,14 +256,14 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
                 "onUpdate:modelValue": e[5] || (e[5] = (l) => i.value.postalCode = l),
                 class: b([
                   "w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2",
-                  o(r).postalCode.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  o(n).postalCode.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, null, 2), [
                 [f, i.value.postalCode]
               ]),
-              o(r).postalCode.$error ? (d(), s("div", oe, [
-                o(r).postalCode.required.$invalid ? (d(), s("span", ie, "PLZ ist erforderlich")) : o(r).postalCode.minLength.$invalid ? (d(), s("span", se, "PLZ muss mindestens 4 Zeichen haben")) : u("", !0)
+              o(n).postalCode.$error ? (d(), s("div", oe, [
+                o(n).postalCode.required.$invalid ? (d(), s("span", ie, "PLZ ist erforderlich")) : o(n).postalCode.minLength.$invalid ? (d(), s("span", se, "PLZ muss mindestens 4 Zeichen haben")) : u("", !0)
               ])) : u("", !0)
             ]),
             t("div", null, [
@@ -276,7 +276,7 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
                 "onUpdate:modelValue": e[6] || (e[6] = (l) => i.value.country = l),
                 class: b([
                   "w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2",
-                  o(r).country.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  o(n).country.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, [...e[18] || (e[18] = [
@@ -284,8 +284,8 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
               ])], 2), [
                 [P, i.value.country]
               ]),
-              o(r).country.$error ? (d(), s("div", de, [
-                o(r).country.required.$invalid ? (d(), s("span", le, "Land ist erforderlich")) : u("", !0)
+              o(n).country.$error ? (d(), s("div", de, [
+                o(n).country.required.$invalid ? (d(), s("span", le, "Land ist erforderlich")) : u("", !0)
               ])) : u("", !0)
             ])
           ])
@@ -293,7 +293,7 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
       ]),
       t("button", {
         onClick: x,
-        disabled: o(r).$invalid,
+        disabled: o(n).$invalid,
         class: "w-full mt-6 text-white bg-red-600 disabled:bg-red-400 hover:bg-red-700 focus:bg-red-700 font-semibold py-3 rounded-md shadow-none transition-colors duration-150"
       }, g(a.buttonLabel), 9, ae)
     ]));
@@ -348,25 +348,25 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
   },
   emits: [L],
   setup(a, { emit: q }) {
-    const k = q, n = a, i = m({}), C = m({
+    const k = q, r = a, i = m({}), C = m({
       mode: "payment",
-      amount: n.amount,
-      currency: n.currency,
+      amount: r.amount,
+      currency: r.currency,
       appearance: {
         theme: "flat"
       }
-    }), r = m({}), x = m(!1), p = m(""), e = m(), l = m();
+    }), n = m({}), x = m(!1), p = m(""), e = m(), l = m();
     _(async () => {
-      await B(n.stripeKey || ""), x.value = !0;
+      await B(r.stripeKey || ""), x.value = !0;
       try {
-        const c = await D.post(apiUrl, {
-          amount: n.amount * 100,
-          currency: n.currency,
-          metadata: n.metadata,
-          productName: n.productName,
-          productDescription: n.productDescription,
-          units: n.units,
-          email: n.email
+        const c = await D.post(r.apiUrl, {
+          amount: r.amount * 100,
+          currency: r.currency,
+          metadata: r.metadata,
+          productName: r.productName,
+          productDescription: r.productDescription,
+          units: r.units,
+          email: r.email
         });
         p.value = c.data.clientSecret;
       } catch (c) {
@@ -381,7 +381,7 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
           elements: S,
           clientSecret: p.value,
           confirmParams: {
-            return_url: n.returnUrl
+            return_url: r.returnUrl
           }
         });
         $ ? console.log($) : k(L);
@@ -398,7 +398,7 @@ const M = { class: "rounded-xl border border-gray-200 p-4" }, O = { class: "grid
         default: E(() => [
           N(o(z), {
             type: "payment",
-            options: r.value,
+            options: n.value,
             ref_key: "paymentComponent",
             ref: l
           }, null, 8, ["options"])
