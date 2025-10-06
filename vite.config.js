@@ -13,7 +13,7 @@ export default defineConfig({
         lib: {
             entry: 'src/index.js',
             name: 'PaymentWidgets',
-            fileName: (format) => `payment-widgets.${format}.js`,
+            fileName: (format) => `vue-payment-widgets.${format}.js`,
         },
         cssCodeSplit: false,
         rollupOptions: {

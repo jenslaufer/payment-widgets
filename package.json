@@ -1,14 +1,14 @@
 {
-    "name": "@solytics/vue-auth-widgets",
+    "name": "@solytics/vue-payments-widgets",
     "version": "0.2.0",
     "private": false,
     "type": "module",
-    "main": "dist/vue-auth-widgets.umd.cjs",
-    "module": "dist/vue-auth-widgets.es.js",
+    "main": "dist/vue-payment-widgets.umd.cjs",
+    "module": "dist/vue-payment-widgets.es.js",
     "exports": {
         ".": {
-            "import": "./dist/vue-auth-widgets.es.js",
-            "require": "./dist/vue-auth-widgets.umd.cjs"
+            "import": "./dist/vue-payment-widgets.es.js",
+            "require": "./dist/vue-payment-widgets.umd.cjs"
         }
     },
     "files": [
