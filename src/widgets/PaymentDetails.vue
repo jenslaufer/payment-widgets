@@ -114,6 +114,10 @@ const VALID_INVOICE_DATA = 'validInvoiceData';
 const emits = defineEmits([VALID_INVOICE_DATA]);
 
 const props = defineProps({
+    apiUrl: {
+        type: String,
+        required: true,
+    },
     amount: {
         type: Number,
         required: true,
@@ -226,7 +230,7 @@ const handle = async () => {
                 ]
             };
 
-            const response = await axios.post(`${import.meta.env.VITE_API_BASE}/invoice`, invoiceData);
+            const response = await axios.post(props.apiUrl, invoiceData);
 
             console.log('Invoice created successfully:', response.data);
             emits(VALID_INVOICE_DATA, response.data);

@@ -22,6 +22,10 @@ const PAYMENT_PERFORMED_EVENT = "paymentPerformed"
 const emit = defineEmits([PAYMENT_PERFORMED_EVENT])
 
 const props = defineProps({
+    apiUrl: {
+        type: String,
+        required: true,
+    },
     email: {
         type: String,
         required: true,
@@ -88,7 +92,7 @@ onBeforeMount(async () => {
     stripeLoaded.value = true
 
     try {
-        const response = await axios.post(`${import.meta.env.VITE_API_BASE}/create-payment-intent`, {
+        const response = await axios.post(apiUrl, {
             amount: props.amount * 100,
             currency: props.currency,
             metadata: props.metadata,
