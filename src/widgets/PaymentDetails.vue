@@ -20,10 +20,10 @@
             <h3 class="text-lg font-semibold mb-4">Rechnungsadresse</h3>
             <div class="grid grid-cols-1 gap-4">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name oder Firma</label>
-                    <input type="text" id="name" v-model="receiverAddress.name"
-                        :class="['w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2',
-                            v$.name.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
+                    <label for="name" :class="labelClass">Name oder Firma</label>
+                    <input type="text" id="name" v-model="receiverAddress.name" :class="[`${inputClass}`,
+                    v$.name.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']"
+                        required />
                     <div v-if="v$.name.$error" class="mt-1 text-sm text-red-600">
                         <span v-if="v$.name.required.$invalid">Name ist erforderlich</span>
                         <span v-else-if="v$.name.minLength.$invalid">Name muss mindestens 2 Zeichen haben</span>
@@ -31,43 +31,43 @@
                 </div>
 
                 <div>
-                    <label for="vatId" class="block text-sm font-medium text-gray-700 mb-1">USt-IdNr.
+                    <label for="vatId" :class="labelClass">USt-IdNr.
                         (optional)</label>
                     <input type="text" id="vatId" v-model="receiverAddress.vatId"
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
 
                 <div>
-                    <label for="line1" class="block text-sm font-medium text-gray-700 mb-1">Adresse Zeile 1</label>
-                    <input type="text" id="line1" v-model="receiverAddress.line1"
-                        :class="['w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2',
-                            v$.line1.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
+                    <label for="line1" :class="labelClass">Adresse Zeile 1</label>
+                    <input type="text" id="line1" v-model="receiverAddress.line1" :class="[`${inputClass}`,
+                    v$.line1.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']"
+                        required />
                     <div v-if="v$.line1.$error" class="mt-1 text-sm text-red-600">
                         <span v-if="v$.line1.required.$invalid">Adresse ist erforderlich</span>
                         <span v-else-if="v$.line1.minLength.$invalid">Adresse muss mindestens 5 Zeichen haben</span>
                     </div>
                 </div>
                 <div>
-                    <label for="line2" class="block text-sm font-medium text-gray-700 mb-1">Adresse Zeile 2</label>
+                    <label for="line2" :class="labelClass">Adresse Zeile 2</label>
                     <input type="text" id="line2" v-model="receiverAddress.line2"
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div class="grid grid-cols-3 gap-4">
                     <div>
-                        <label for="city" class="block text-sm font-medium text-gray-700 mb-1">Stadt</label>
+                        <label for="city" :class="labelClass">Stadt</label>
                         <input type="text" id="city" v-model="receiverAddress.city"
-                            :class="['w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2',
-                                v$.city.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
+                            :class="[`${inputClass}`,
+                            v$.city.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
                         <div v-if="v$.city.$error" class="mt-1 text-sm text-red-600">
                             <span v-if="v$.city.required.$invalid">Stadt ist erforderlich</span>
                             <span v-else-if="v$.city.minLength.$invalid">Stadt muss mindestens 2 Zeichen haben</span>
                         </div>
                     </div>
                     <div>
-                        <label for="postalCode" class="block text-sm font-medium text-gray-700 mb-1">PLZ</label>
+                        <label for="postalCode" :class="labelClass">PLZ</label>
                         <input type="text" id="postalCode" v-model="receiverAddress.postalCode"
-                            :class="['w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2',
-                                v$.postalCode.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
+                            :class="[`${inputClass}`,
+                            v$.postalCode.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required />
                         <div v-if="v$.postalCode.$error" class="mt-1 text-sm text-red-600">
                             <span v-if="v$.postalCode.required.$invalid">PLZ ist erforderlich</span>
                             <span v-else-if="v$.postalCode.minLength.$invalid">PLZ muss mindestens 4 Zeichen
@@ -75,10 +75,10 @@
                         </div>
                     </div>
                     <div>
-                        <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Land</label>
+                        <label for="country" :class="labelClass">Land</label>
                         <select id="country" v-model="receiverAddress.country"
-                            :class="['w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2',
-                                v$.country.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required>
+                            :class="[`${inputClass}`,
+                            v$.country.$error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500']" required>
                             <option value="">Bitte wählen</option>
                             <option value="Deutschland">Deutschland</option>
                             <option value="Österreich">Österreich</option>
@@ -97,8 +97,7 @@
             </div>
         </div>
 
-        <button @click="handle" :disabled="v$.$invalid"
-            class="w-full mt-6 text-white bg-red-600 disabled:bg-red-400 hover:bg-red-700 focus:bg-red-700 font-semibold py-3 rounded-md shadow-none transition-colors duration-150">
+        <button @click="handle" :disabled="v$.$invalid" :class="buttonClass">
             {{ buttonLabel }}
         </button>
     </div>
@@ -174,7 +173,22 @@ const props = defineProps({
         type: String,
         required: true,
         default: 'Next >>'
-    }
+    },
+    buttonClass: {
+        type: String,
+        required: false,
+        default: 'w-full mt-6 text-white bg-red-600 disabled:bg-red-400 hover:bg-red-700 focus:bg-red-700 font-semibold py-3 rounded-md shadow-none transition-colors duration-150'
+    },
+    labelClass: {
+        type: String,
+        required: false,
+        default: 'block text-sm font-medium text-gray-700 mb-1'
+    },
+    inputClass: {
+        type: String,
+        required: false,
+        default: 'w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2'
+    },
 });
 
 const receiverAddress = ref({
