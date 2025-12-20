@@ -5,7 +5,7 @@
             <StripeElement type="payment" :options="paymentElementOptions" ref="paymentComponent" />
         </StripeElements>
         <button @click="handleSubmit" :disabled="buttonDisabled" :class="buttonClass">
-            Jetzt bezahlen
+            {{ buttonLabel }}
         </button>
     </div>
 </template>
@@ -70,6 +70,11 @@ const props = defineProps({
         required: false,
         default: 'w-full mt-6 text-white bg-red-600 disabled:bg-red-400 hover:bg-red-700 focus:bg-red-700 font-semibold py-3 rounded-md shadow-none transition-colors duration-150'
     },
+    buttonLabel: {
+        type: String,
+        required: false,
+        default: 'Jetzt bezahlen'
+    }
 })
 
 const stripeOptions = ref({
