@@ -30,6 +30,7 @@
         "@vuelidate/core": "^2.0.3",
         "@vuelidate/validators": "^2.0.4",
         "axios": "^1.13.5",
+        "extpay": "^3.1.2",
         "tailwindcss": "^4.1.13",
         "vue-stripe-js": "^2.0.2"
     },
