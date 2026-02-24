@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var t=document.createElement("style");t.appendChild(document.createTextNode('@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-border-style:solid;--tw-font-weight:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-duration:initial}}}@layer theme{:root,:host{--font-sans:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--color-red-400:oklch(70.4% .191 22.216);--color-red-500:oklch(63.7% .237 25.331);--color-red-600:oklch(57.7% .245 27.325);--color-red-700:oklch(50.5% .213 27.518);--color-blue-500:oklch(62.3% .214 259.815);--color-gray-200:oklch(92.8% .006 264.531);--color-gray-300:oklch(87.2% .01 258.338);--color-gray-600:oklch(44.6% .03 256.802);--color-gray-700:oklch(37.3% .034 259.733);--color-gray-800:oklch(27.8% .033 256.848);--color-white:#fff;--spacing:.25rem;--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-lg:1.125rem;--text-lg--line-height:calc(1.75 / 1.125);--text-xl:1.25rem;--text-xl--line-height:calc(1.75 / 1.25);--font-weight-medium:500;--font-weight-semibold:600;--radius-md:.375rem;--radius-xl:.75rem;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab,red,red)){::placeholder{color:color-mix(in oklab,currentcolor 50%,transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.start{inset-inline-start:var(--spacing)}.mt-1{margin-top:calc(var(--spacing) * 1)}.mt-6{margin-top:calc(var(--spacing) * 6)}.mb-1{margin-bottom:calc(var(--spacing) * 1)}.mb-3{margin-bottom:calc(var(--spacing) * 3)}.mb-4{margin-bottom:calc(var(--spacing) * 4)}.block{display:block}.grid{display:grid}.table{display:table}.w-full{width:100%}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.gap-2{gap:calc(var(--spacing) * 2)}.gap-4{gap:calc(var(--spacing) * 4)}.rounded-md{border-radius:var(--radius-md)}.rounded-xl{border-radius:var(--radius-xl)}.border{border-style:var(--tw-border-style);border-width:1px}.border-gray-200{border-color:var(--color-gray-200)}.border-gray-300{border-color:var(--color-gray-300)}.border-red-500{border-color:var(--color-red-500)}.bg-red-600{background-color:var(--color-red-600)}.p-4{padding:calc(var(--spacing) * 4)}.px-3{padding-inline:calc(var(--spacing) * 3)}.py-2{padding-block:calc(var(--spacing) * 2)}.py-3{padding-block:calc(var(--spacing) * 3)}.pt-6{padding-top:calc(var(--spacing) * 6)}.text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xl{font-size:var(--text-xl);line-height:var(--tw-leading,var(--text-xl--line-height))}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.text-gray-600{color:var(--color-gray-600)}.text-gray-700{color:var(--color-gray-700)}.text-gray-800{color:var(--color-gray-800)}.text-red-600{color:var(--color-red-600)}.text-white{color:var(--color-white)}.shadow-none{--tw-shadow:0 0 #0000;box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.duration-150{--tw-duration:.15s;transition-duration:.15s}@media(hover:hover){.hover\\:bg-red-700:hover{background-color:var(--color-red-700)}}.focus\\:bg-red-700:focus{background-color:var(--color-red-700)}.focus\\:ring-2:focus{--tw-ring-shadow:var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.focus\\:ring-blue-500:focus{--tw-ring-color:var(--color-blue-500)}.focus\\:ring-red-500:focus{--tw-ring-color:var(--color-red-500)}.focus\\:outline-none:focus{--tw-outline-style:none;outline-style:none}.disabled\\:bg-red-400:disabled{background-color:var(--color-red-400)}}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-duration{syntax:"*";inherits:false}')),document.head.appendChild(t)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
-import { ref as I, onMounted as re, openBlock as v, createElementBlock as k, createElementVNode as o, toDisplayString as B, normalizeClass as S, withDirectives as R, unref as y, vModelText as V, createCommentVNode as q, createStaticVNode as ae, vModelSelect as ie, renderSlot as J, onBeforeMount as oe, createVNode as X, withCtx as le } from "vue";
+import { ref as I, onMounted as re, openBlock as v, createElementBlock as k, createElementVNode as o, toDisplayString as B, normalizeClass as _, withDirectives as R, unref as y, vModelText as V, createCommentVNode as L, createStaticVNode as ae, vModelSelect as ie, renderSlot as J, onBeforeMount as oe, createVNode as X, withCtx as le } from "vue";
 import { useVuelidate as me } from "@vuelidate/core";
 import { minLength as Y, required as Z } from "@vuelidate/validators";
 import se from "axios";
@@ -8,12 +8,12 @@ import { StripeElements as ce, StripeElement as ue } from "vue-stripe-js";
 var K = { exports: {} }, de = K.exports, Q;
 function pe() {
   return Q || (Q = 1, (function(s, x) {
-    (function(p, l) {
-      l(s);
+    (function(p, m) {
+      m(s);
     })(typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : de, function(p) {
       if (typeof browser > "u" || Object.getPrototypeOf(browser) !== Object.prototype) {
-        const l = "The message port closed before a response was received.", c = "Returning a Promise is the preferred way to send a reply from an onMessage/onMessageExternal listener, as the sendResponse will be removed from the specs (See https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage)", L = (m) => {
-          const E = {
+        const m = "The message port closed before a response was received.", d = "Returning a Promise is the preferred way to send a reply from an onMessage/onMessageExternal listener, as the sendResponse will be removed from the specs (See https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage)", S = (l) => {
+          const T = {
             alarms: {
               clear: {
                 minArgs: 0,
@@ -685,9 +685,9 @@ function pe() {
               }
             }
           };
-          if (Object.keys(E).length === 0)
+          if (Object.keys(T).length === 0)
             throw new Error("api-metadata.json has not been included in browser-polyfill");
-          class _ extends WeakMap {
+          class P extends WeakMap {
             constructor(r, i = void 0) {
               super(i), this.createItem = r;
             }
@@ -696,41 +696,41 @@ function pe() {
             }
           }
           const a = (t) => t && typeof t == "object" && typeof t.then == "function", f = (t, r) => (...i) => {
-            m.runtime.lastError ? t.reject(m.runtime.lastError) : r.singleCallbackArg || i.length <= 1 && r.singleCallbackArg !== !1 ? t.resolve(i[0]) : t.resolve(i);
-          }, T = (t) => t == 1 ? "argument" : "arguments", N = (t, r) => function(u, ...w) {
+            l.runtime.lastError ? t.reject(l.runtime.lastError) : r.singleCallbackArg || i.length <= 1 && r.singleCallbackArg !== !1 ? t.resolve(i[0]) : t.resolve(i);
+          }, N = (t) => t == 1 ? "argument" : "arguments", q = (t, r) => function(c, ...w) {
             if (w.length < r.minArgs)
-              throw new Error(`Expected at least ${r.minArgs} ${T(r.minArgs)} for ${t}(), got ${w.length}`);
+              throw new Error(`Expected at least ${r.minArgs} ${N(r.minArgs)} for ${t}(), got ${w.length}`);
             if (w.length > r.maxArgs)
-              throw new Error(`Expected at most ${r.maxArgs} ${T(r.maxArgs)} for ${t}(), got ${w.length}`);
-            return new Promise((C, P) => {
+              throw new Error(`Expected at most ${r.maxArgs} ${N(r.maxArgs)} for ${t}(), got ${w.length}`);
+            return new Promise((C, $) => {
               if (r.fallbackToNoCallback)
                 try {
-                  u[t](...w, f({
+                  c[t](...w, f({
                     resolve: C,
-                    reject: P
+                    reject: $
                   }, r));
                 } catch (g) {
-                  console.warn(`${t} API method doesn't seem to support the callback parameter, falling back to call it without a callback: `, g), u[t](...w), r.fallbackToNoCallback = !1, r.noCallback = !0, C();
+                  console.warn(`${t} API method doesn't seem to support the callback parameter, falling back to call it without a callback: `, g), c[t](...w), r.fallbackToNoCallback = !1, r.noCallback = !0, C();
                 }
-              else r.noCallback ? (u[t](...w), C()) : u[t](...w, f({
+              else r.noCallback ? (c[t](...w), C()) : c[t](...w, f({
                 resolve: C,
-                reject: P
+                reject: $
               }, r));
             });
           }, M = (t, r, i) => new Proxy(r, {
-            apply(u, w, C) {
+            apply(c, w, C) {
               return i.call(w, t, ...C);
             }
           });
           let D = Function.call.bind(Object.prototype.hasOwnProperty);
           const F = (t, r = {}, i = {}) => {
-            let u = /* @__PURE__ */ Object.create(null), w = {
-              has(P, g) {
-                return g in t || g in u;
+            let c = /* @__PURE__ */ Object.create(null), w = {
+              has($, g) {
+                return g in t || g in c;
               },
-              get(P, g, $) {
-                if (g in u)
-                  return u[g];
+              get($, g, E) {
+                if (g in c)
+                  return c[g];
                 if (!(g in t))
                   return;
                 let h = t[g];
@@ -738,7 +738,7 @@ function pe() {
                   if (typeof r[g] == "function")
                     h = M(t, t[g], r[g]);
                   else if (D(i, g)) {
-                    let U = N(g, i[g]);
+                    let U = q(g, i[g]);
                     h = M(t, t[g], U);
                   } else
                     h = h.bind(t);
@@ -747,7 +747,7 @@ function pe() {
                 else if (D(i, "*"))
                   h = F(h, r[g], i["*"]);
                 else
-                  return Object.defineProperty(u, g, {
+                  return Object.defineProperty(c, g, {
                     configurable: !0,
                     enumerable: !0,
                     get() {
@@ -757,22 +757,22 @@ function pe() {
                       t[g] = U;
                     }
                   }), h;
-                return u[g] = h, h;
+                return c[g] = h, h;
               },
-              set(P, g, $, h) {
-                return g in u ? u[g] = $ : t[g] = $, !0;
+              set($, g, E, h) {
+                return g in c ? c[g] = E : t[g] = E, !0;
               },
-              defineProperty(P, g, $) {
-                return Reflect.defineProperty(u, g, $);
+              defineProperty($, g, E) {
+                return Reflect.defineProperty(c, g, E);
               },
-              deleteProperty(P, g) {
-                return Reflect.deleteProperty(u, g);
+              deleteProperty($, g) {
+                return Reflect.deleteProperty(c, g);
               }
             }, C = Object.create(t);
             return new Proxy(C, w);
           }, z = (t) => ({
-            addListener(r, i, ...u) {
-              r.addListener(t.get(i), ...u);
+            addListener(r, i, ...c) {
+              r.addListener(t.get(i), ...c);
             },
             hasListener(r, i) {
               return r.hasListener(t.get(i));
@@ -782,19 +782,19 @@ function pe() {
             }
           });
           let O = !1;
-          const G = new _((t) => typeof t != "function" ? t : function(i, u, w) {
-            let C = !1, P, g = new Promise((W) => {
-              P = function(j) {
-                O || (console.warn(c, new Error().stack), O = !0), C = !0, W(j);
+          const G = new P((t) => typeof t != "function" ? t : function(i, c, w) {
+            let C = !1, $, g = new Promise((W) => {
+              $ = function(j) {
+                O || (console.warn(d, new Error().stack), O = !0), C = !0, W(j);
               };
-            }), $;
+            }), E;
             try {
-              $ = t(i, u, P);
+              E = t(i, c, $);
             } catch (W) {
-              $ = Promise.reject(W);
+              E = Promise.reject(W);
             }
-            const h = $ !== !0 && a($);
-            if ($ !== !0 && !h && !C)
+            const h = E !== !0 && a(E);
+            if (E !== !0 && !h && !C)
               return !1;
             const U = (W) => {
               W.then((j) => {
@@ -809,25 +809,25 @@ function pe() {
                 console.error("Failed to send onMessage rejected reply", j);
               });
             };
-            return U(h ? $ : g), !0;
+            return U(h ? E : g), !0;
           }), e = ({
             reject: t,
             resolve: r
           }, i) => {
-            m.runtime.lastError ? m.runtime.lastError.message === l ? r() : t(m.runtime.lastError) : i && i.__mozWebExtensionPolyfillReject__ ? t(new Error(i.message)) : r(i);
-          }, n = (t, r, i, ...u) => {
-            if (u.length < r.minArgs)
-              throw new Error(`Expected at least ${r.minArgs} ${T(r.minArgs)} for ${t}(), got ${u.length}`);
-            if (u.length > r.maxArgs)
-              throw new Error(`Expected at most ${r.maxArgs} ${T(r.maxArgs)} for ${t}(), got ${u.length}`);
+            l.runtime.lastError ? l.runtime.lastError.message === m ? r() : t(l.runtime.lastError) : i && i.__mozWebExtensionPolyfillReject__ ? t(new Error(i.message)) : r(i);
+          }, n = (t, r, i, ...c) => {
+            if (c.length < r.minArgs)
+              throw new Error(`Expected at least ${r.minArgs} ${N(r.minArgs)} for ${t}(), got ${c.length}`);
+            if (c.length > r.maxArgs)
+              throw new Error(`Expected at most ${r.maxArgs} ${N(r.maxArgs)} for ${t}(), got ${c.length}`);
             return new Promise((w, C) => {
-              const P = e.bind(null, {
+              const $ = e.bind(null, {
                 resolve: w,
                 reject: C
               });
-              u.push(P), i.sendMessage(...u);
+              c.push($), i.sendMessage(...c);
             });
-          }, d = {
+          }, u = {
             runtime: {
               onMessage: z(G),
               onMessageExternal: z(G),
@@ -856,7 +856,7 @@ function pe() {
               maxArgs: 1
             }
           };
-          return E.privacy = {
+          return T.privacy = {
             network: {
               "*": b
             },
@@ -866,11 +866,11 @@ function pe() {
             websites: {
               "*": b
             }
-          }, F(m, d, E);
+          }, F(l, u, T);
         };
         if (typeof chrome != "object" || !chrome || !chrome.runtime || !chrome.runtime.id)
           throw new Error("This script should only be loaded in a browser extension.");
-        p.exports = L(chrome);
+        p.exports = S(chrome);
       } else
         p.exports = browser;
     });
@@ -882,17 +882,17 @@ typeof window < "u" && window.addEventListener("message", (s) => {
 }, !1);
 function ne(s) {
   const x = "https://extensionpay.com", p = `${x}/extension/${s}`;
-  function l(e) {
+  function m(e) {
     return new Promise((n) => setTimeout(n, e));
   }
-  async function c(e) {
+  async function d(e) {
     try {
       return await A.storage.sync.get(e);
     } catch {
       return await A.storage.local.get(e);
     }
   }
-  async function L(e) {
+  async function S(e) {
     try {
       return await A.storage.sync.set(e);
     } catch {
@@ -907,19 +907,19 @@ function ne(s) {
 You can copy and paste this to your manifest.json file to fix this error:
 
 "permissions": [
-    ${n.map((d) => `"    ${d}"`).join(`,
+    ${n.map((u) => `"    ${u}"`).join(`,
 `)}${n.length > 0 ? "," : ""}
     "storage"
 ]
 `;
     }
-  }), c(["extensionpay_installed_at", "extensionpay_user"]).then(async (e) => {
+  }), d(["extensionpay_installed_at", "extensionpay_user"]).then(async (e) => {
     if (e.extensionpay_installed_at) return;
-    const n = e.extensionpay_user, d = n ? n.installedAt : (/* @__PURE__ */ new Date()).toISOString();
-    await L({ extensionpay_installed_at: d });
+    const n = e.extensionpay_user, u = n ? n.installedAt : (/* @__PURE__ */ new Date()).toISOString();
+    await S({ extensionpay_installed_at: u });
   });
-  const m = [], E = [];
-  async function _() {
+  const l = [], T = [];
+  async function P() {
     var e = {}, n;
     if (A.management)
       n = await A.management.getSelf();
@@ -928,7 +928,7 @@ You can copy and paste this to your manifest.json file to fix this error:
     else
       throw "ExtPay needs to be run in a browser extension context";
     n.installType == "development" && (e.development = !0);
-    const d = await fetch(`${p}/api/new-key`, {
+    const u = await fetch(`${p}/api/new-key`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -936,18 +936,18 @@ You can copy and paste this to your manifest.json file to fix this error:
       },
       body: JSON.stringify(e)
     });
-    if (!d.ok)
-      throw d.status, `${x}/home`;
-    const b = await d.json();
-    return await L({ extensionpay_api_key: b }), b;
+    if (!u.ok)
+      throw u.status, `${x}/home`;
+    const b = await u.json();
+    return await S({ extensionpay_api_key: b }), b;
   }
   async function a() {
-    const e = await c(["extensionpay_api_key"]);
+    const e = await d(["extensionpay_api_key"]);
     return e.extensionpay_api_key ? e.extensionpay_api_key : null;
   }
   const f = /^\d\d\d\d-\d\d-\d\dT/;
-  async function T() {
-    var e = await c(["extensionpay_user", "extensionpay_installed_at"]);
+  async function N() {
+    var e = await d(["extensionpay_user", "extensionpay_installed_at"]);
     const n = await a();
     if (!n)
       return {
@@ -957,19 +957,19 @@ You can copy and paste this to your manifest.json file to fix this error:
         // sometimes this function gets called before the initial install time can be flushed to storage
         trialStartedAt: null
       };
-    const d = await fetch(`${p}/api/v2/user?api_key=${n}`, {
+    const u = await fetch(`${p}/api/v2/user?api_key=${n}`, {
       method: "GET",
       headers: {
         Accept: "application/json"
       }
     });
-    if (!d.ok) throw "ExtPay error while fetching user: " + await d.text();
-    const b = await d.json(), t = {};
+    if (!u.ok) throw "ExtPay error while fetching user: " + await u.text();
+    const b = await u.json(), t = {};
     for (var [r, i] of Object.entries(b))
       i && i.match && i.match(f) && (i = new Date(i)), t[r] = i;
-    return t.installedAt = new Date(e.extensionpay_installed_at), t.paidAt && (!e.extensionpay_user || e.extensionpay_user && !e.extensionpay_user.paidAt) && m.forEach((u) => u(t)), t.trialStartedAt && (!e.extensionpay_user || e.extensionpay_user && !e.extensionpay_user.trialStartedAt) && E.forEach((u) => u(t)), await L({ extensionpay_user: b }), t;
+    return t.installedAt = new Date(e.extensionpay_installed_at), t.paidAt && (!e.extensionpay_user || e.extensionpay_user && !e.extensionpay_user.paidAt) && l.forEach((c) => c(t)), t.trialStartedAt && (!e.extensionpay_user || e.extensionpay_user && !e.extensionpay_user.trialStartedAt) && T.forEach((c) => c(t)), await S({ extensionpay_user: b }), t;
   }
-  async function N() {
+  async function q() {
     const e = await fetch(`${p}/api/v2/current-plans`, {
       method: "GET",
       headers: {
@@ -981,16 +981,16 @@ You can copy and paste this to your manifest.json file to fix this error:
       throw `ExtPay: HTTP error while getting plans. Received http code: ${e.status}`;
     return await e.json();
   }
-  async function M(e, n, d) {
+  async function M(e, n, u) {
     if (A.windows && A.windows.create) {
-      const b = await A.windows.getCurrent(), t = Math.round((b.width - n) * 0.5 + b.left), r = Math.round((b.height - d) * 0.5 + b.top);
+      const b = await A.windows.getCurrent(), t = Math.round((b.width - n) * 0.5 + b.left), r = Math.round((b.height - u) * 0.5 + b.top);
       try {
         A.windows.create({
           url: e,
           type: "popup",
           focused: !0,
           width: n,
-          height: d,
+          height: u,
           left: t,
           top: r
         });
@@ -999,29 +999,29 @@ You can copy and paste this to your manifest.json file to fix this error:
           url: e,
           type: "popup",
           width: n,
-          height: d,
+          height: u,
           left: t,
           top: r
         });
       }
     } else
-      window.open(e, null, `toolbar=no,location=no,directories=no,status=no,menubar=no,width=${n},height=${d},left=450`);
+      window.open(e, null, `toolbar=no,location=no,directories=no,status=no,menubar=no,width=${n},height=${u},left=450`);
   }
   async function D(e) {
     var n = await a();
-    n || (n = await _());
-    let d = `${p}/choose-plan?api_key=${n}`;
-    e && (d = `${p}/choose-plan/${e}?api_key=${n}`), A.tabs && A.tabs.create ? await A.tabs.create({ url: d, active: !0 }) : window.open(d, "_blank");
+    n || (n = await P());
+    let u = `${p}/choose-plan?api_key=${n}`;
+    e && (u = `${p}/choose-plan/${e}?api_key=${n}`), A.tabs && A.tabs.create ? await A.tabs.create({ url: u, active: !0 }) : window.open(u, "_blank");
   }
   async function F(e) {
     var n = await a();
-    n || (n = await _());
-    var d = `${p}/trial?api_key=${n}`;
-    e && (d += `&period=${e}`), M(d, 500, 700);
+    n || (n = await P());
+    var u = `${p}/trial?api_key=${n}`;
+    e && (u += `&period=${e}`), M(u, 500, 700);
   }
   async function z() {
     var e = await a();
-    e || (e = await _());
+    e || (e = await P());
     const n = `${p}/reactivate?api_key=${e}&back=choose-plan&v2`;
     M(n, 500, 800);
   }
@@ -1029,17 +1029,17 @@ You can copy and paste this to your manifest.json file to fix this error:
   async function G() {
     if (!O) {
       O = !0;
-      for (var e = await T(), n = 0; n < 120; ++n) {
+      for (var e = await N(), n = 0; n < 120; ++n) {
         if (e.paidAt)
           return O = !1, e;
-        await l(1e3), e = await T();
+        await m(1e3), e = await N();
       }
       O = !1;
     }
   }
   return {
     getUser: function() {
-      return T();
+      return N();
     },
     onPaid: {
       addListener: function(e) {
@@ -1048,12 +1048,12 @@ You can copy and paste this to your manifest.json file to fix this error:
             "matches": ["${x}/*"],
             "js": ["ExtPay.js"],
             "run_at": "document_start"
-        }]`, d = A.runtime.getManifest();
-        if (!d.content_scripts)
+        }]`, u = A.runtime.getManifest();
+        if (!u.content_scripts)
           throw `ExtPay setup error: To use the onPaid callback handler, please include ExtPay as a content script in your manifest.json. You can copy the example below into your manifest.json or check the docs: https://github.com/Glench/ExtPay#2-configure-your-manifestjson
 
         ${n}`;
-        const b = d.content_scripts.find((t) => t.matches.includes(x.replace(":3000", "") + "/*"));
+        const b = u.content_scripts.find((t) => t.matches.includes(x.replace(":3000", "") + "/*"));
         if (b) {
           if (!b.run_at || b.run_at !== "document_start")
             throw `ExtPay setup error: To use the onPaid callback handler, please make sure the ExtPay content script in your manifest.json runs at document start. You can copy the example below into your manifest.json or check the docs: https://github.com/Glench/ExtPay#2-configure-your-manifestjson
@@ -1063,27 +1063,27 @@ You can copy and paste this to your manifest.json file to fix this error:
           throw `ExtPay setup error: To use the onPaid callback handler, please include ExtPay as a content script in your manifest.json matching "${x}/*". You can copy the example below into your manifest.json or check the docs: https://github.com/Glench/ExtPay#2-configure-your-manifestjson
 
         ${n}`;
-        m.push(e);
+        l.push(e);
       }
       // removeListener: function(callback) {
       //     // TODO
       // }
     },
-    getPlans: N,
+    getPlans: q,
     openPaymentPage: D,
     openTrialPage: F,
     openLoginPage: z,
     onTrialStarted: {
       addListener: function(e) {
-        E.push(e);
+        T.push(e);
       }
     },
     startBackground: function() {
-      A.runtime.onMessage.addListener(function(e, n, d) {
+      A.runtime.onMessage.addListener(function(e, n, u) {
         if (e == "extpay-fetch-user")
           G();
         else if (e == "extpay-trial-start")
-          T();
+          N();
         else if (e == "extpay-extinfo" && A.management)
           return A.management.getSelf();
       });
@@ -1112,7 +1112,7 @@ const Ae = ({ extensionId: s } = {}) => {
 }, fe = { class: "rounded-xl border border-gray-200 p-4" }, xe = { class: "grid grid-cols-2 gap-2" }, be = { class: "text-gray-800 font-medium" }, he = { class: "text-gray-800 font-medium text-sm" }, we = { class: "text-gray-800 font-medium" }, ve = { class: "text-gray-800 font-medium" }, ke = { class: "mt-6 pt-6 border-gray-200" }, Se = { class: "grid grid-cols-1 gap-4" }, _e = {
   key: 0,
   class: "mt-1 text-sm text-red-600"
-}, Ce = { key: 0 }, Pe = { key: 1 }, $e = {
+}, Pe = { key: 0 }, Ce = { key: 1 }, $e = {
   key: 0,
   class: "mt-1 text-sm text-red-600"
 }, Ee = { key: 0 }, Te = { key: 1 }, Ne = { class: "grid grid-cols-3 gap-4" }, qe = {
@@ -1206,7 +1206,7 @@ const Ae = ({ extensionId: s } = {}) => {
   },
   emits: [ee],
   setup(s, { emit: x }) {
-    const p = x, l = s, c = I({
+    const p = x, m = s, d = I({
       name: "",
       line1: "",
       line2: "",
@@ -1215,7 +1215,7 @@ const Ae = ({ extensionId: s } = {}) => {
       country: "",
       state: "",
       vatId: ""
-    }), L = {
+    }), S = {
       name: { required: Z, minLength: Y(2) },
       line1: { required: Z, minLength: Y(5) },
       line2: {},
@@ -1223,40 +1223,40 @@ const Ae = ({ extensionId: s } = {}) => {
       postalCode: { required: Z, minLength: Y(4) },
       country: { required: Z },
       vatId: {}
-    }, m = me(L, c);
+    }, l = me(S, d);
     re(() => {
-      m.value.$touch();
+      l.value.$touch();
     });
-    const E = async () => {
-      if (await m.value.$validate(), !m.value.$error)
+    const T = async () => {
+      if (await l.value.$validate(), !l.value.$error)
         try {
-          const _ = {
+          const P = {
             sender: {
-              name: l.senderName,
-              line1: l.senderLine1,
-              line2: l.senderLine2 || "",
-              postalCode: l.senderPostalCode,
-              city: l.senderCity,
-              state: l.senderState || "",
-              vatId: l.senderVatId || ""
+              name: m.senderName,
+              line1: m.senderLine1,
+              line2: m.senderLine2 || "",
+              postalCode: m.senderPostalCode,
+              city: m.senderCity,
+              state: m.senderState || "",
+              vatId: m.senderVatId || ""
             },
-            receiver: c.value,
+            receiver: d.value,
             invoice_items: [
               {
-                units: l.units,
-                unit_price: l.amount,
-                description: l.productDescription,
-                currency: l.currency,
+                units: m.units,
+                unit_price: m.amount,
+                description: m.productDescription,
+                currency: m.currency,
                 tax_rate: 19
               }
             ]
-          }, a = await se.post(l.apiUrl, _);
+          }, a = await se.post(m.apiUrl, P);
           console.log("Invoice created successfully:", a.data), p(ee, a.data);
-        } catch (_) {
-          console.error("Error creating invoice:", _);
+        } catch (P) {
+          console.error("Error creating invoice:", P);
         }
     };
-    return (_, a) => (v(), k("div", fe, [
+    return (P, a) => (v(), k("div", fe, [
       a[14] || (a[14] = o("h2", { class: "text-xl font-semibold mb-3" }, "Bestelldetails", -1)),
       o("div", xe, [
         a[7] || (a[7] = o("span", { class: "text-gray-600" }, "Produkt:", -1)),
@@ -1275,145 +1275,145 @@ const Ae = ({ extensionId: s } = {}) => {
           o("div", null, [
             o("label", {
               for: "name",
-              class: S(s.labelClass)
+              class: _(s.labelClass)
             }, "Name oder Firma", 2),
             R(o("input", {
               type: "text",
               id: "name",
-              "onUpdate:modelValue": a[0] || (a[0] = (f) => c.value.name = f),
-              class: S([
+              "onUpdate:modelValue": a[0] || (a[0] = (f) => d.value.name = f),
+              class: _([
                 `${s.inputClass}`,
-                y(m).name.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                y(l).name.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
               ]),
               required: ""
             }, null, 2), [
-              [V, c.value.name]
+              [V, d.value.name]
             ]),
-            y(m).name.$error ? (v(), k("div", _e, [
-              y(m).name.required.$invalid ? (v(), k("span", Ce, "Name ist erforderlich")) : y(m).name.minLength.$invalid ? (v(), k("span", Pe, "Name muss mindestens 2 Zeichen haben")) : q("", !0)
-            ])) : q("", !0)
+            y(l).name.$error ? (v(), k("div", _e, [
+              y(l).name.required.$invalid ? (v(), k("span", Pe, "Name ist erforderlich")) : y(l).name.minLength.$invalid ? (v(), k("span", Ce, "Name muss mindestens 2 Zeichen haben")) : L("", !0)
+            ])) : L("", !0)
           ]),
           o("div", null, [
             o("label", {
               for: "vatId",
-              class: S(s.labelClass)
+              class: _(s.labelClass)
             }, "USt-IdNr. (optional)", 2),
             R(o("input", {
               type: "text",
               id: "vatId",
-              "onUpdate:modelValue": a[1] || (a[1] = (f) => c.value.vatId = f),
+              "onUpdate:modelValue": a[1] || (a[1] = (f) => d.value.vatId = f),
               class: "w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             }, null, 512), [
-              [V, c.value.vatId]
+              [V, d.value.vatId]
             ])
           ]),
           o("div", null, [
             o("label", {
               for: "line1",
-              class: S(s.labelClass)
+              class: _(s.labelClass)
             }, "Adresse Zeile 1", 2),
             R(o("input", {
               type: "text",
               id: "line1",
-              "onUpdate:modelValue": a[2] || (a[2] = (f) => c.value.line1 = f),
-              class: S([
+              "onUpdate:modelValue": a[2] || (a[2] = (f) => d.value.line1 = f),
+              class: _([
                 `${s.inputClass}`,
-                y(m).line1.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                y(l).line1.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
               ]),
               required: ""
             }, null, 2), [
-              [V, c.value.line1]
+              [V, d.value.line1]
             ]),
-            y(m).line1.$error ? (v(), k("div", $e, [
-              y(m).line1.required.$invalid ? (v(), k("span", Ee, "Adresse ist erforderlich")) : y(m).line1.minLength.$invalid ? (v(), k("span", Te, "Adresse muss mindestens 5 Zeichen haben")) : q("", !0)
-            ])) : q("", !0)
+            y(l).line1.$error ? (v(), k("div", $e, [
+              y(l).line1.required.$invalid ? (v(), k("span", Ee, "Adresse ist erforderlich")) : y(l).line1.minLength.$invalid ? (v(), k("span", Te, "Adresse muss mindestens 5 Zeichen haben")) : L("", !0)
+            ])) : L("", !0)
           ]),
           o("div", null, [
             o("label", {
               for: "line2",
-              class: S(s.labelClass)
+              class: _(s.labelClass)
             }, "Adresse Zeile 2", 2),
             R(o("input", {
               type: "text",
               id: "line2",
-              "onUpdate:modelValue": a[3] || (a[3] = (f) => c.value.line2 = f),
+              "onUpdate:modelValue": a[3] || (a[3] = (f) => d.value.line2 = f),
               class: "w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             }, null, 512), [
-              [V, c.value.line2]
+              [V, d.value.line2]
             ])
           ]),
           o("div", Ne, [
             o("div", null, [
               o("label", {
                 for: "city",
-                class: S(s.labelClass)
+                class: _(s.labelClass)
               }, "Stadt", 2),
               R(o("input", {
                 type: "text",
                 id: "city",
-                "onUpdate:modelValue": a[4] || (a[4] = (f) => c.value.city = f),
-                class: S([
+                "onUpdate:modelValue": a[4] || (a[4] = (f) => d.value.city = f),
+                class: _([
                   `${s.inputClass}`,
-                  y(m).city.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  y(l).city.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, null, 2), [
-                [V, c.value.city]
+                [V, d.value.city]
               ]),
-              y(m).city.$error ? (v(), k("div", qe, [
-                y(m).city.required.$invalid ? (v(), k("span", Le, "Stadt ist erforderlich")) : y(m).city.minLength.$invalid ? (v(), k("span", Me, "Stadt muss mindestens 2 Zeichen haben")) : q("", !0)
-              ])) : q("", !0)
+              y(l).city.$error ? (v(), k("div", qe, [
+                y(l).city.required.$invalid ? (v(), k("span", Le, "Stadt ist erforderlich")) : y(l).city.minLength.$invalid ? (v(), k("span", Me, "Stadt muss mindestens 2 Zeichen haben")) : L("", !0)
+              ])) : L("", !0)
             ]),
             o("div", null, [
               o("label", {
                 for: "postalCode",
-                class: S(s.labelClass)
+                class: _(s.labelClass)
               }, "PLZ", 2),
               R(o("input", {
                 type: "text",
                 id: "postalCode",
-                "onUpdate:modelValue": a[5] || (a[5] = (f) => c.value.postalCode = f),
-                class: S([
+                "onUpdate:modelValue": a[5] || (a[5] = (f) => d.value.postalCode = f),
+                class: _([
                   `${s.inputClass}`,
-                  y(m).postalCode.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  y(l).postalCode.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, null, 2), [
-                [V, c.value.postalCode]
+                [V, d.value.postalCode]
               ]),
-              y(m).postalCode.$error ? (v(), k("div", je, [
-                y(m).postalCode.required.$invalid ? (v(), k("span", De, "PLZ ist erforderlich")) : y(m).postalCode.minLength.$invalid ? (v(), k("span", Ie, "PLZ muss mindestens 4 Zeichen haben")) : q("", !0)
-              ])) : q("", !0)
+              y(l).postalCode.$error ? (v(), k("div", je, [
+                y(l).postalCode.required.$invalid ? (v(), k("span", De, "PLZ ist erforderlich")) : y(l).postalCode.minLength.$invalid ? (v(), k("span", Ie, "PLZ muss mindestens 4 Zeichen haben")) : L("", !0)
+              ])) : L("", !0)
             ]),
             o("div", null, [
               o("label", {
                 for: "country",
-                class: S(s.labelClass)
+                class: _(s.labelClass)
               }, "Land", 2),
               R(o("select", {
                 id: "country",
-                "onUpdate:modelValue": a[6] || (a[6] = (f) => c.value.country = f),
-                class: S([
+                "onUpdate:modelValue": a[6] || (a[6] = (f) => d.value.country = f),
+                class: _([
                   `${s.inputClass}`,
-                  y(m).country.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
+                  y(l).country.$error ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
                 ]),
                 required: ""
               }, [...a[12] || (a[12] = [
                 ae('<option value="">Bitte wählen</option><option value="Deutschland">Deutschland</option><option value="Österreich">Österreich</option><option value="Schweiz">Schweiz</option><option value="Frankreich">Frankreich</option><option value="Italien">Italien</option><option value="Spanien">Spanien</option><option value="Niederlande">Niederlande</option><option value="Belgien">Belgien</option>', 9)
               ])], 2), [
-                [ie, c.value.country]
+                [ie, d.value.country]
               ]),
-              y(m).country.$error ? (v(), k("div", Oe, [
-                y(m).country.required.$invalid ? (v(), k("span", Re, "Land ist erforderlich")) : q("", !0)
-              ])) : q("", !0)
+              y(l).country.$error ? (v(), k("div", Oe, [
+                y(l).country.required.$invalid ? (v(), k("span", Re, "Land ist erforderlich")) : L("", !0)
+              ])) : L("", !0)
             ])
           ])
         ])
       ]),
       o("button", {
-        onClick: E,
-        disabled: y(m).$invalid,
-        class: S(s.buttonClass)
+        onClick: T,
+        disabled: y(l).$invalid,
+        class: _(s.buttonClass)
       }, B(s.buttonLabel), 11, Be)
     ]));
   }
@@ -1426,11 +1426,14 @@ const Ae = ({ extensionId: s } = {}) => {
     }
   },
   setup(s) {
-    const p = ne(s.extensionId), l = I(!1);
+    const p = ne(s.extensionId), m = I(!1), d = () => p.openPaymentPage();
     return re(async () => {
-      const c = await p.getUser().catch(() => null);
-      c && c.paidAt && (l.value = !0);
-    }), (c, L) => l.value ? J(c.$slots, "paid", { key: 0 }) : J(c.$slots, "unpaid", { key: 1 });
+      const S = await p.getUser().catch(() => null);
+      S && S.paidAt && (m.value = !0);
+    }), (S, l) => m.value ? J(S.$slots, "paid", { key: 0 }) : J(S.$slots, "unpaid", {
+      key: 1,
+      openPayment: d
+    });
   }
 }, Ue = { key: 0 }, Ve = ["disabled"], te = "paymentPerformed", Xe = {
   __name: "Stripe",
@@ -1492,57 +1495,57 @@ const Ae = ({ extensionId: s } = {}) => {
   },
   emits: [te],
   setup(s, { emit: x }) {
-    const p = x, l = s, c = I({}), L = I({
+    const p = x, m = s, d = I({}), S = I({
       mode: "payment",
-      amount: l.amount,
-      currency: l.currency,
+      amount: m.amount,
+      currency: m.currency,
       appearance: {
         theme: "flat"
       }
-    }), m = I({}), E = I(!1), _ = I(""), a = I(), f = I();
+    }), l = I({}), T = I(!1), P = I(""), a = I(), f = I();
     oe(async () => {
-      await ge(l.stripeKey || ""), E.value = !0;
+      await ge(m.stripeKey || ""), T.value = !0;
       try {
-        const N = await se.post(l.apiUrl, {
-          amount: l.amount * 100,
-          currency: l.currency,
-          metadata: l.metadata,
-          productName: l.productName,
-          productDescription: l.productDescription,
-          units: l.units,
-          email: l.email
+        const q = await se.post(m.apiUrl, {
+          amount: m.amount * 100,
+          currency: m.currency,
+          metadata: m.metadata,
+          productName: m.productName,
+          productDescription: m.productDescription,
+          units: m.units,
+          email: m.email
         });
-        _.value = N.data.clientSecret;
-      } catch (N) {
-        console.error("Failed to create payment intent:", N);
+        P.value = q.data.clientSecret;
+      } catch (q) {
+        console.error("Failed to create payment intent:", q);
       }
     });
-    async function T() {
-      const N = a.value?.instance, M = a.value?.elements;
-      if (N && M) {
+    async function N() {
+      const q = a.value?.instance, M = a.value?.elements;
+      if (q && M) {
         await M.submit();
-        const { error: D } = await N.confirmPayment({
+        const { error: D } = await q.confirmPayment({
           elements: M,
-          clientSecret: _.value,
+          clientSecret: P.value,
           confirmParams: {
-            return_url: l.returnUrl
+            return_url: m.returnUrl
           }
         });
         D ? console.log(D) : p(te);
       }
     }
-    return (N, M) => E.value ? (v(), k("div", Ue, [
+    return (q, M) => T.value ? (v(), k("div", Ue, [
       X(y(ce), {
         "stripe-key": s.stripeKey,
-        "instance-options": c.value,
-        "elements-options": L.value,
+        "instance-options": d.value,
+        "elements-options": S.value,
         ref_key: "elementsComponent",
         ref: a
       }, {
         default: le(() => [
           X(y(ue), {
             type: "payment",
-            options: m.value,
+            options: l.value,
             ref_key: "paymentComponent",
             ref: f
           }, null, 8, ["options"])
@@ -1550,11 +1553,11 @@ const Ae = ({ extensionId: s } = {}) => {
         _: 1
       }, 8, ["stripe-key", "instance-options", "elements-options"]),
       o("button", {
-        onClick: T,
+        onClick: N,
         disabled: s.buttonDisabled,
-        class: S(s.buttonClass)
+        class: _(s.buttonClass)
       }, B(s.buttonLabel), 11, Ve)
-    ])) : q("", !0);
+    ])) : L("", !0);
   }
 };
 export {
